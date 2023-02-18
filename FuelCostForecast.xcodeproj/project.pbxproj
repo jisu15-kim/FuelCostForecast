@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD22773C299FE93600D76B8A /* BrentFuelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD22773B299FE93600D76B8A /* BrentFuelData.swift */; };
+		CD600001299A9295003ED7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD600000299A9295003ED7EC /* Assets.xcassets */; };
+		CD600004299A9295003ED7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD600002299A9295003ED7EC /* LaunchScreen.storyboard */; };
+		CD60000D299A92BF003ED7EC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CD60000C299A92BF003ED7EC /* Alamofire */; };
+		CD60000F299A92CF003ED7EC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD60000E299A92CF003ED7EC /* NetworkManager.swift */; };
+		CD600011299A92EC003ED7EC /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD600010299A92EC003ED7EC /* DateManager.swift */; };
+		CD600013299A9FBA003ED7EC /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD600012299A9FBA003ED7EC /* CurrencyData.swift */; };
+		CD60FFF8299A9294003ED7EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD60FFF7299A9294003ED7EC /* AppDelegate.swift */; };
+		CD60FFFA299A9294003ED7EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD60FFF9299A9294003ED7EC /* SceneDelegate.swift */; };
+		CD60FFFC299A9294003ED7EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD60FFFB299A9294003ED7EC /* ViewController.swift */; };
+		CD60FFFF299A9294003ED7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD60FFFD299A9294003ED7EC /* Main.storyboard */; };
+		CD8463CE299BE895007E09D7 /* KFuelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8463CD299BE895007E09D7 /* KFuelData.swift */; };
+		CD8463D1299BE985007E09D7 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8463D0299BE985007E09D7 /* Secret.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD22773B299FE93600D76B8A /* BrentFuelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrentFuelData.swift; sourceTree = "<group>"; };
+		CD600000299A9295003ED7EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD600003299A9295003ED7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD600005299A9295003ED7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD60000E299A92CF003ED7EC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CD600010299A92EC003ED7EC /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		CD600012299A9FBA003ED7EC /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
+		CD60FFF4299A9294003ED7EC /* FuelCostForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelCostForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD60FFF7299A9294003ED7EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD60FFF9299A9294003ED7EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD60FFFB299A9294003ED7EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD60FFFE299A9294003ED7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD8463CD299BE895007E09D7 /* KFuelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFuelData.swift; sourceTree = "<group>"; };
+		CD8463D0299BE985007E09D7 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD60FFF1299A9294003ED7EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD60000D299A92BF003ED7EC /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD60FFEB299A9294003ED7EC = {
+			isa = PBXGroup;
+			children = (
+				CD60FFF6299A9294003ED7EC /* FuelCostForecast */,
+				CD60FFF5299A9294003ED7EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD60FFF5299A9294003ED7EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD60FFF4299A9294003ED7EC /* FuelCostForecast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD60FFF6299A9294003ED7EC /* FuelCostForecast */ = {
+			isa = PBXGroup;
+			children = (
+				CD8463CF299BE97E007E09D7 /* Secret */,
+				CD600010299A92EC003ED7EC /* DateManager.swift */,
+				CD60000E299A92CF003ED7EC /* NetworkManager.swift */,
+				CD60FFF7299A9294003ED7EC /* AppDelegate.swift */,
+				CD60FFF9299A9294003ED7EC /* SceneDelegate.swift */,
+				CD60FFFB299A9294003ED7EC /* ViewController.swift */,
+				CD60FFFD299A9294003ED7EC /* Main.storyboard */,
+				CD600000299A9295003ED7EC /* Assets.xcassets */,
+				CD600002299A9295003ED7EC /* LaunchScreen.storyboard */,
+				CD600005299A9295003ED7EC /* Info.plist */,
+				CD600012299A9FBA003ED7EC /* CurrencyData.swift */,
+				CD8463CD299BE895007E09D7 /* KFuelData.swift */,
+				CD22773B299FE93600D76B8A /* BrentFuelData.swift */,
+			);
+			path = FuelCostForecast;
+			sourceTree = "<group>";
+		};
+		CD8463CF299BE97E007E09D7 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				CD8463D0299BE985007E09D7 /* Secret.swift */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD60FFF3299A9294003ED7EC /* FuelCostForecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD600008299A9295003ED7EC /* Build configuration list for PBXNativeTarget "FuelCostForecast" */;
+			buildPhases = (
+				CD60FFF0299A9294003ED7EC /* Sources */,
+				CD60FFF1299A9294003ED7EC /* Frameworks */,
+				CD60FFF2299A9294003ED7EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuelCostForecast;
+			packageProductDependencies = (
+				CD60000C299A92BF003ED7EC /* Alamofire */,
+			);
+			productName = FuelCostForecast;
+			productReference = CD60FFF4299A9294003ED7EC /* FuelCostForecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD60FFEC299A9294003ED7EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CD60FFF3299A9294003ED7EC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CD60FFEF299A9294003ED7EC /* Build configuration list for PBXProject "FuelCostForecast" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD60FFEB299A9294003ED7EC;
+			packageReferences = (
+				CD60000B299A92BF003ED7EC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = CD60FFF5299A9294003ED7EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD60FFF3299A9294003ED7EC /* FuelCostForecast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD60FFF2299A9294003ED7EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD600004299A9295003ED7EC /* LaunchScreen.storyboard in Resources */,
+				CD600001299A9295003ED7EC /* Assets.xcassets in Resources */,
+				CD60FFFF299A9294003ED7EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD60FFF0299A9294003ED7EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD600013299A9FBA003ED7EC /* CurrencyData.swift in Sources */,
+				CD60000F299A92CF003ED7EC /* NetworkManager.swift in Sources */,
+				CD600011299A92EC003ED7EC /* DateManager.swift in Sources */,
+				CD60FFFC299A9294003ED7EC /* ViewController.swift in Sources */,
+				CD60FFF8299A9294003ED7EC /* AppDelegate.swift in Sources */,
+				CD8463D1299BE985007E09D7 /* Secret.swift in Sources */,
+				CD8463CE299BE895007E09D7 /* KFuelData.swift in Sources */,
+				CD60FFFA299A9294003ED7EC /* SceneDelegate.swift in Sources */,
+				CD22773C299FE93600D76B8A /* BrentFuelData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD600002299A9295003ED7EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD600003299A9295003ED7EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD60FFFD299A9294003ED7EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD60FFFE299A9294003ED7EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD600006299A9295003ED7EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD600007299A9295003ED7EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD600009299A9295003ED7EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846TMZL7WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FuelCostForecast/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jisuKim.FuelCostForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD60000A299A9295003ED7EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 846TMZL7WC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FuelCostForecast/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jisuKim.FuelCostForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD600008299A9295003ED7EC /* Build configuration list for PBXNativeTarget "FuelCostForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD600009299A9295003ED7EC /* Debug */,
+				CD60000A299A9295003ED7EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD60FFEF299A9294003ED7EC /* Build configuration list for PBXProject "FuelCostForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD600006299A9295003ED7EC /* Debug */,
+				CD600007299A9295003ED7EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD60000B299A92BF003ED7EC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD60000C299A92BF003ED7EC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD60000B299A92BF003ED7EC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CD60FFEC299A9294003ED7EC /* Project object */;
+}
