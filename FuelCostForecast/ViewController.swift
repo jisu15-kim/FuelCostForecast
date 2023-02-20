@@ -24,10 +24,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        network.tempCurrency(url: URL(string: "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/2023-01-30/currencies/usd/krw.json")!) { data in
-            print("Data: \(data.date)")
-        }
-        
         let dates = DateManager().getOffsetDatesString()
         let urls = network.getCurrencyURL(dates: dates)
         
@@ -42,7 +38,7 @@ class ViewController: UIViewController {
         }
         
         network.getBrentFuelMonthPrice { [weak self] price in
-            dump(price)
+//            dump(price)
             self?.brentFuelDatas = price
             self?.dataProcessing()
         }
@@ -64,8 +60,29 @@ class ViewController: UIViewController {
             }
             return isMatch
         }
-        print("============Filtered==========")
-        dump(filtered)
+        let dbModel = makeHistoryDB(price: filtered, currency: self.currencyDatas)
+        predict(data: dbModel)
+    }
+    
+    func makeHistoryDB(price: [BrentFuelPrice], currency: [CurrencyData]) -> [DBModel] {
+        var reverseCurrency = currency
+        reverseCurrency.reverse()
+        
+        print("============DB==========")
+        print("============CURRENCY==========")
+        dump(reverseCurrency)
+        print("============PRICE==========")
+        dump(price)
+        
+        var DBDataModel: [DBModel] = []
+        
+        reverseCurrency.enumerated().forEach { (index: Int, currency: CurrencyData) in
+            let model = DBModel(date: currency.date, price: price[index].price, currency: currency.krw)
+            DBDataModel.append(model)
+        }
+        print("============MODEL==========")
+        dump(DBDataModel)
+        return DBDataModel
     }
     
     func isSameDay(date1: Date, date2: Date) -> Bool {
@@ -75,5 +92,13 @@ class ViewController: UIViewController {
         } else {
             return false
         }
+    }
+    
+    func predict(data: [DBModel]) {
+        var total: Double = 0.0
+        data.forEach { model in
+            total += model.purchasePrice
+        }
+        print("total: \(total / Double(data.count))")
     }
 }

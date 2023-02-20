@@ -10,27 +10,10 @@ import UIKit
 
 class NetworkManager {
     
-    func tempCurrency(url: URL, completion: @escaping (CurrencyData) -> Void) {
-        
-        let decoder = getNormalDateDecoder("yyyy-MM-dd")
-        
-        AF.request(url)
-            .responseDecodable(of: CurrencyData.self, decoder: decoder, completionHandler: { response in
-                switch response.result {
-                case .success(let response):
-                    print("====성공===")
-                    completion(response)
-                case .failure(let error):
-                    print("====실패===")
-                    print(error)
-                }
-            })
-    }
-    
     private func getNormalDateDecoder(_ type: String) -> JSONDecoder {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+//        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        dateFormatter.timeZone = TimeZone(identifier: "UTC")
         dateFormatter.dateFormat = type
         
         let decoder = JSONDecoder()

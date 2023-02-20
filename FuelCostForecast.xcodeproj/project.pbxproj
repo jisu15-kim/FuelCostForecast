@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD22773B299FE93600D76B8A /* BrentFuelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrentFuelData.swift; sourceTree = "<group>"; };
+		CD22773B299FE93600D76B8A /* BrentFuelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrentFuelData.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		CD600000299A9295003ED7EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD600003299A9295003ED7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD600005299A9295003ED7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
